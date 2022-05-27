@@ -248,3 +248,7 @@
   left: calc(50% - 375px / 2);
   top: 92px;
 }
+
+.nav-menu {
+  display: none;
+}
