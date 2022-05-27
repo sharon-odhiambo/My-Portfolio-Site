@@ -42,10 +42,9 @@
 
 .nav-menu {
   display: none;
-  display: flex;
   list-style: none;
   justify-content: space-between;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
 .nav-menu img {
@@ -249,6 +248,4 @@
   top: 92px;
 }
 
-.nav-menu {
-  display: none;
-}
+
