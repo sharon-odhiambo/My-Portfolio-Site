@@ -1,9 +1,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-  Portfolio-Site
-> Description the project.
+# Portfolio-Site
 -This is my first portfolio site using Microverse templates
 
 ## Built With
@@ -15,16 +13,16 @@
 - Technologies used
   Nodejs, CSS, HTML, Javascript
 
-## Live Demo (if available)
-
-[Live Demo Link](http://127.0.0.1:5500/index.html#)
-
-
 ## Getting Started
 
-You can access this project by cloning my github repository at https://github.com/sharon-odhiambo/My-Portfolio-Site or contact me directly.
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+### Clone this repository
+$ git@github.com:sharon-odhiambo/My-Portfolio-Site.git
+$ cd My-Portfolio-Site
+
+### Open index.html with your browser
 
 ### Prerequisites
 HTML, CSS
