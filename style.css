@@ -150,6 +150,24 @@
   overflow-y: hidden;
 }
 
+.project-details-two p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.project-one-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
 .headline {
   background-image: url('./images/header-bg.svg');
   background-position: center;
@@ -293,15 +311,6 @@
   text-align: left;
 }
 
-.project-one-info p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-}
-
 .languages-works-one {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -391,15 +400,6 @@
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
-}
-
-.project-details-two p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0;
   text-align: left;
 }
