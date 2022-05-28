@@ -208,9 +208,9 @@
 .works {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 40px;
+  grid-row-gap: 10px;
   height: 2788px;
-  width: 375px;
+  width: 475px;
   left: 0px;
   top: 718px;
   border-radius: 0px;
@@ -222,21 +222,21 @@
   height: 552px;
   width: 327px;
   left: 24px;
-  top: 114px;
+  top: 1438px;
   border-radius: 16px;
   padding: 16px;
 }
 
 .snapshoot-one {
   height: 220px;
-width: 295px;
-left: 16px;
-top: 16px;
-border-radius: 8px;
+  width: 295px;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
 }
 
 .project-one-info {
-  height: 80px;
+  height: 260px;
   width: 295px;
   left: 0px;
   top: 0px;
@@ -245,6 +245,8 @@ border-radius: 8px;
 
 .project-title {
   font-family: Poppins;
+  width: 295px;
+  height: 80px;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -300,11 +302,12 @@ justify-content: left;
   text-align: left;
 }
 
-.project-details h5 ul {
+.project-one-info h5 ul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-right: 20px;
+  justify-content: left;
 }
 
 .project-link {
@@ -315,26 +318,27 @@ justify-content: left;
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 .works-two {
   display: grid;
   height: 552px;
   width: 327px;
   left: 24px;
-  top: 114px;
+  top: 1438px;
   border-radius: 16px;
   padding: 16px;
 }
 
 .snapshoot-two {
   height: 220px;
-width: 295px;
-left: 16px;
-top: 16px;
-border-radius: 8px;
+  width: 295px;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
 }
 
 .project-two-info {
-  height: 80px;
+  height: 260px;
   width: 295px;
   left: 0px;
   top: 0px;
@@ -343,7 +347,9 @@ border-radius: 8px;
 
 .project-title {
   font-family: Poppins;
-  font-size: 32px;
+  width: 295px;
+  height: 80px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
@@ -390,19 +396,20 @@ justify-content: left;
 }
 
 .project-details h8 {
-  font-family: Poppins;
-  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
-.project-details h9 ul {
+.project-two-info h9 ul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-right: 20px;
+  justify-content: left;
 }
 
 .project-link {
@@ -419,21 +426,21 @@ justify-content: left;
   height: 552px;
   width: 327px;
   left: 24px;
-  top: 114px;
+  top: 1438px;
   border-radius: 16px;
   padding: 16px;
 }
 
 .snapshoot-three {
   height: 220px;
-width: 295px;
-left: 16px;
-top: 16px;
-border-radius: 8px;
+  width: 295px;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
 }
 
 .project-three-info {
-  height: 80px;
+  height: 260px;
   width: 295px;
   left: 0px;
   top: 0px;
@@ -442,6 +449,8 @@ border-radius: 8px;
 
 .project-title {
   font-family: Poppins;
+  width: 295px;
+  height: 80px;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -489,19 +498,20 @@ justify-content: left;
 }
 
 .project-details h11 {
-  font-family: Poppins;
-  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
-.project-details h12 ul {
+.project-three-info h12 ul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-right: 20px;
+  justify-content: left;
 }
 
 .project-link {
@@ -518,7 +528,7 @@ justify-content: left;
   height: 552px;
   width: 327px;
   left: 24px;
-  top: 114px;
+  top: 1438px;
   border-radius: 16px;
   padding: 16px;
 }
@@ -532,11 +542,15 @@ justify-content: left;
 }
 
 .project-four-info {
-  height: 80px;
+  height: 260px;
   width: 295px;
   left: 0px;
   top: 0px;
   border-radius: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
 }
 
 .project-title {
@@ -588,19 +602,20 @@ justify-content: left;
 }
 
 .project-details h15 {
-  font-family: Poppins;
-  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
-.project-details h16 ul {
-  list-style: none;
+.languages-works-four {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-right: 20px;
+  justify-content: left;
+  list-style: none;
 }
 
 .project-link {
