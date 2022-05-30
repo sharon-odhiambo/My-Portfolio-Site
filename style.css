@@ -244,7 +244,7 @@
 }
 
 .works-skills {
-  row-gap: 40px;
+  row-gap: 80px;
   width: 395px;
   height: 4088px;
 }
@@ -1137,13 +1137,13 @@ border-radius: 16px;
   gap: 20px;
 }
 
-.skill-projects-item-one li p {
+.skill-projects-item-one p {
   width: 327px;
   height: 72px;
   gap: 200px;
 }
 
-.skill-projects-item-two li p {
+.skill-projects-item-two p {
   width: 327px;
   height: 72px;
   gap: 260px;
