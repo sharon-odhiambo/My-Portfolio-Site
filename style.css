@@ -244,8 +244,9 @@
 }
 
 .works-skills {
-  display: grid;
   row-gap: 40px;
+  width: 395px;
+  height: 4088px;
 }
 
 .works {
@@ -939,8 +940,12 @@ border-radius: 16px;
   border-radius: 16px;
 }
 
+.about-me-skills {
+  width: 375px;
+  height: 1000px;
+}
 .about-me {
-  height: 375px;
+  height: 409px;
   width: 375px;
   left: 375px;
   border-radius: [object Object]px;
@@ -997,86 +1002,149 @@ border-radius: 16px;
   margin-right: 20px;
 }
 
-.skill-section {
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #396DF2;
+  transition: all 0.5s;
+  border: 1px solid #6070FF;
+  background-color: white;
+  width: 162px;
+  height: 48px;
+  }
+  
+  .button span {
+    transition: 0.5s;
+    width: 148px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396DF2;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .skill-section-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 327px;
+    height: 464.15px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.skill-section-items ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  width: 327px;
+  height: 348px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.skill-section-items ul li p {
+  width: 327px;
+  height: 72px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  left: 12px;
+  right: 78px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.languages-dropdown-bar {
+  display: inline-block;
   flex-direction: column;
-  padding: 12px;
-  gap: 12px;
-}
-
-.skill-section li {
+  align-items: flex-start;
+  padding: 0px;
   width: 327px;
-  padding-left: 12px;
-  padding-top: 24px;
+  height: 320.15px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.skill-items {
+.languages-dropdown-bar p {
+  gap: 200px;
+}
+
+.skill-items ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  list-style: none;
-  padding: 12px;
-  gap: 12px;
   width: 327px;
-  height: 248.15px;
-  align-content: center;
+  height: 320px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.skill-items li{
+.skill-items ul li {
+  width: 303px;
+  height: 66px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #f7f7f9;
+  margin-bottom: 8px;
+}
+
+.skill-items ul li span {
+  left: 76px;
+  right: 12px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
   display: flex;
-  align-content: center;
+  align-items: flex-end;
+  color: #253858;
+  width: 215px;
+  gap: 20px;
+}
+
+.skill-projects-item-one li p {
   width: 327px;
   height: 72px;
-  background: #F7F7F9;
+  gap: 200px;
 }
 
-.skill-items li img {
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-
-.button {
-font-family: 'Poppins', sans-serif;
-font-size: 17px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.03em;
-text-align: center;
-color: #396DF2;
-transition: all 0.5s;
-border: 1px solid #6070FF;
-background-color: white;
-}
-
-.button span {
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.languages-dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 20px;
-  right: 26px;
-  top: calc(50% - 40px/2);
-  border-radius: 8px;
-  border: 3px solid #172b4d;
-}
-
-.skill-section li {
-  flex-direction: column;
-  align-items: flex-start;
-  flex-basis: 7.6rem;
+.skill-projects-item-two li p {
+  width: 327px;
+  height: 72px;
+  gap: 260px;
 }
