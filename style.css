@@ -264,7 +264,7 @@
 }
 
 .works-skills {
-  row-gap: 80px;
+  row-gap: 20px;
   width: 395px;
   height: 4088px;
 }
@@ -275,7 +275,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 10px;
   height: 3088px;
-  gap: 88px;
+  gap: 60px;
   width: 375px;
   left: calc(100% - 375px / 4);
 }
@@ -295,7 +295,7 @@
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 690px;
+  height: 650px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -449,7 +449,7 @@
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 720px;
+  height: 690px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -603,7 +603,7 @@
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 690px;
+  height: 650px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -757,7 +757,7 @@
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 720px;
+  height: 670px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -917,7 +917,7 @@
 .about-me {
   height: 409px;
   width: 375px;
-  left: 75px;
+  left: 375px;
   border-radius: [object object]px;
   background-position: center;
   background-repeat: no-repeat;
