@@ -16,94 +16,30 @@
   overflow-x: hidden;
 }
 
-.hamburger {
-  display: block;
-  cursor: pointer;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.hamburger.active {
-  margin-right: 35px;
-  float: right;
-  margin-top: 18px;
-}
-
-.bar {
-  display: block;
-  background-color: #6070ff;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-}
-
 .headline.active {
   filter: blur(4px);
   background-color: white;
 }
 
-.hamburger.active .bar:first-child {
-  background-color: white;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:last-child {
-  transform: translateY(-8px) rotate(-45deg);
-  background-color: var(--white-bg-color);
-}
-
-.nav {
+.navigation {
   display: flex;
+  width: 100%;
+  height: 5.5rem;
+  align-items: center;
+  left: calc(50%-375/2);
   justify-content: space-between;
 }
 
-.nav-menu {
-  display: none;
+.mobile-nav-menu {
+  display: flex;
   list-style: none;
   justify-content: space-between;
   overflow-x: hidden;
 }
 
-.nav-menu img {
-  width: 76px;
-  height: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 10;
-}
-
-.nav-menu:last-child {
-  width: 63px;
-  height: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
 .logo {
-  width: 76px;
-  height: 20px;
+  width: 18px;
+  height: 12px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -111,6 +47,7 @@
   display: flex;
   color: #6070ff;
   text-decoration: none;
+  flex-grow: 5;
 }
 
 .mobile-navbar {
@@ -127,10 +64,6 @@
   z-index: 1;
 }
 
-.mobile-nav-menu {
-  display: none;
-}
-
 .mobile-navbar.active .mobile-nav-menu {
   list-style-type: none;
   display: flex;
@@ -145,6 +78,19 @@
   color: white;
   font-size: 32px;
   font-weight: 600;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  right: 24px;
+  top: calc(10% - 40px/2);
+  border-radius: 8px
 }
 
 .body.active {
