@@ -172,29 +172,6 @@
   color: #344563;
 }
 
-@media  screen and (min-device-width:480px)  {
-  .headline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    left: 260px;
-  }
-
-  .works-project {
-    display: grid;
-    grid-template-columns: 50% auto;
-    width: 100%;
-  }
-
-  .mobile-nav-menu {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    overflow-x: visible;
-  }
-}
-
 .lets-connect {
   width: 100%;
   height: 14px;
@@ -250,6 +227,7 @@
   justify-content: center;
   align-content: center;
   margin-top: 16px;
+  width: 100%;
 }
 
 .works-project {
@@ -269,12 +247,65 @@
   flex-grow: 0;
 }
 
-.snapshoot {
+.works-project-one {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  width: 100%;
+  height: 690px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.snapshoot-one {
   height: 220px;
   width: 100%;
   left: 16px;
   top: 16px;
   border-radius: 8px;
+  background-image: url("./images/SnapshootPortfolio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.snapshoot-two {
+  height: 220px;
+  width: 100%;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
+  background-image: url("./images/SnapshootPortfolio1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.snapshoot-three {
+  height: 220px;
+  width: 100%;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
+  background-image: url("./images/SnapshootPortfolio2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.snapshoot-four {
+  height: 220px;
+  width: 100%;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
+  background-image: url("./images/SnapshootPortfolio3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .project-info {
@@ -565,4 +596,132 @@
   flex-grow: 0;
   background: #f7f7f9;
   margin-bottom: 8px;
+}
+
+@media  screen and (min-width:768px)  {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    left: 260px;
+  }
+
+  .works-skills {
+    row-gap: 10px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 142px;
+    gap: 42px;
+    position: absolute;
+    max-width: 1440px;
+    max-height: 2194px;
+    left: 0px;
+  }
+
+  .works-project {
+    display: flex;
+    flex-direction: row;
+    max-width: 1156px;
+    max-height: 496px;
+    margin: 0;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 24px;
+  }
+
+  .mobile-nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    overflow-x: visible;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .snapshoot-one {
+    height: 448px;
+    width: 100%;
+    left: 16px;
+    top: 16px;
+    border-radius: 8px;
+    background-image: url("./images/snapshoot-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .snapshoot-two {
+    height: 448px;
+    width: 100%;
+    left: 16px;
+    top: 16px;
+    border-radius: 8px;
+    background-image: url("./images/SnapshootPortfolio3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.snapshoot-three {
+  height: 448px;
+  width: 100%;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
+  background-image: url("./images/SnapshootPortfolio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.snapshoot-four {
+  height: 448px;
+  width: 100%;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
+  background-image: url("./images/SnapshootPortfolio2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  .works-top {
+    background-size: 544px 448px;
+  }
+
+  .project-info {
+    width: 544px;
+    height: 448px;
+  }
+
+  .about-me-skills {
+    display: flex;
+    flex-direction: row;
+    max-width: 1156px;
+    max-height: 496px;
+    left: 142px;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 24px;
+  }
+
+  .works-project-one {
+    max-width: 1156px;
+    max-height: 496px;
+    flex-direction: row-reverse;
+  }
+
+  .logo {
+    display: flex;
+    width: 76px;
+    height: 20px;
+  }
+
+  .mobile-nav-menu {
+    overflow-x: visible;
+  }
 }
