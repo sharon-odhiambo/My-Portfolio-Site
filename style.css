@@ -93,6 +93,12 @@
   border-radius: 8px
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .body.active {
   overflow-y: hidden;
 }
@@ -132,9 +138,8 @@
 }
 
 .header-background {
-  position: absolute;
-  width: 375px;
-  height: 718px;
+  width: 100%;
+  height: 568px;
   left: 0;
   top: 0;
   background: #fff;
@@ -148,10 +153,17 @@
   background-color: white;
 }
 
+@media screen  and (min-width: 768px) {
+  .header-background {
+    width: 100%
+  }
+}
+
 .headline-content div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .headline-content div h1 {
