@@ -1107,12 +1107,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("contact-me.png") url("back.png");
+  background-image: url("./images/contact-form.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 265px 809px;
+  background-color: #6070ff;
   width: 100%;
   height: 900px;
-  background: #6070ff;
   margin-top: 140px;
-  
 }
 
 h4 {
@@ -1147,6 +1149,12 @@ input[type="text"] {
   height: 48px;
   width: 327px;
   border-radius: 8px;
+}
+
+  input[type="email"] {
+    height: 48px;
+    width: 327px;
+    border-radius: 8px;
 }
 .but {
   display: flex;

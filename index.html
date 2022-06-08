@@ -374,30 +374,19 @@
           <ul>
             <li>
               <label for="name"></label>
-              <input
-                type="text"
-                id="name"
-                name="user_name"
-                placeholder="your name "
-              />
+              <input type="text" id="name" name="user_name" maxlength="30" placeholder="your name " required/>
             </li>
             <li>
               <label for="mail"></label>
-              <input
-                type="text"
-                id="mail"
-                name="user_mail"
-                placeholder="your email "
-              />
+              <input type="email" id="mail" name="user_mail" placeholder="your email " required/>
             </li>
             <li>
               <label for="msg"></label>
-              <textarea class="text" id="msg" name="user_message" placeholder="write something here"></textarea>
+              <textarea class="text" id="msg" name="user_message" maxlength="500" placeholder="write something here" required></textarea>
             </li>
             <li>
               <button class="but" type="submit">Get in Touch</button>
             </li>
-            
           </ul>
         </div>
       </form>
