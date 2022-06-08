@@ -1120,9 +1120,14 @@
   width: 100%;
   height: 900px;
   margin-top: 140px;
+  border: 1px solid #172b4d ;
 }
 
-h4 {
+.form-sections {
+  list-style: none;
+}
+
+.form h1 {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -1132,14 +1137,16 @@ h4 {
   text-align: center;
 }
 
-.forms {
+.form-sections:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-right: 40px;
+  width: 327px;
+  height: 170px;
 }
 
-.info {
+.form p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1173,7 +1180,7 @@ input[type="email"] {
   border-radius: 8px;
 }
 
-.text {
+.textarea {
   height: 170px;
   width: 327px;
   border-radius: 8px;
