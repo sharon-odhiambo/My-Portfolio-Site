@@ -662,29 +662,29 @@
     left: 16px;
     top: 16px;
     border-radius: 8px;
-    background-image: url("./images/SnapshootPortfolio3.svg");
+    background-image: url("./images/desktop-portfolio-1.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
 .snapshoot-three {
   height: 448px;
-  width: 100%;
+  width: 544px;
   left: 16px;
   top: 16px;
   border-radius: 8px;
-  background-image: url("./images/SnapshootPortfolio.svg");
+  background-image: url("./images/desktop-portfolio-2.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .snapshoot-four {
   height: 448px;
-  width: 100%;
+  width: 544px;
   left: 16px;
   top: 16px;
   border-radius: 8px;
-  background-image: url("./images/SnapshootPortfolio2.svg");
+  background-image: url("./images/desktop-portfolio-3.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -723,5 +723,13 @@
 
   .mobile-nav-menu {
     overflow-x: visible;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    left: 260px;
   }
 }
