@@ -151,6 +151,16 @@
   overflow-y: hidden;
 }
 
+.form p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
 .skill-projects-item-one p {
   width: 327px;
   height: 72px;
@@ -183,6 +193,16 @@
 
 .languages-dropdown-bar p {
   gap: 200px;
+}
+
+.form h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
 }
 
 .header-background {
@@ -991,21 +1011,75 @@
 }
 
 .button {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #396df2;
-  transition: all 0.5s;
-  border: 1px solid #6070ff;
-  background-color: white;
-  width: 152px;
+  width: 124px;
   height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  gap: 10px;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  border-radius: 8px;
 }
 
 .button span {
+  transition: 0.5s;
+  width: 148px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button-resume {
+  width: 162px;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.button-resume span {
   transition: 0.5s;
   width: 148px;
   height: 24px;
@@ -1040,6 +1114,10 @@
 }
 
 .button:hover span {
+  padding-right: 25px;
+}
+
+.button-resume:hover span {
   padding-right: 25px;
 }
 
@@ -1080,6 +1158,11 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.forms li {
+  list-style: none;
+  margin: 30px;
 }
 
 .skill-items ul {
