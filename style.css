@@ -309,6 +309,7 @@
   row-gap: 20px;
   width: 395px;
   height: 4088px;
+  background: #e5e5e5;
 }
 
 .works {
@@ -953,18 +954,20 @@
   gap: 24px;
   left: calc(50% - 375px / 2);
   top: 3506px;
+  background: #fff;
+  border-top-right-radius: 5rem;
 }
 
 .about-me {
   height: 409px;
   width: 375px;
-  left: 375px;
   border-radius: [object object]px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
   margin-left: 0;
+  margin-top: 20px;
 }
 
 .about-me div {
