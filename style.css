@@ -129,7 +129,7 @@
   padding: 20px;
 }
 
-.menu{
+.menu {
   padding: 20px;
 }
 
@@ -1221,12 +1221,12 @@
   width: 100%;
   height: 700px;
   margin-top: 250px;
-  margin-left: 0px;
+  margin-left: 0;
   border-top-left-radius: 5rem;
 }
 
 .input:enabled {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .form-sections {
@@ -1281,7 +1281,7 @@ input[type="email"] {
 }
 
 .but:active {
-  background: #6070FF;
+  background: #6070ff;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
