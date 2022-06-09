@@ -111,6 +111,7 @@
   display: flex;
   color: #6070ff;
   text-decoration: none;
+  padding: 20px;
 }
 
 .mobile-navbar {
@@ -125,6 +126,11 @@
   height: 100%;
   background-color: blueviolet;
   z-index: 1;
+  padding: 20px;
+}
+
+.menu{
+  padding: 20px;
 }
 
 .mobile-nav-menu {
@@ -216,16 +222,26 @@
 
 .headline {
   background-image: url('./images/header-bg.svg');
-  background-position: center;
+  background-position: absolute;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 462px 488px;
   background-color: white;
+  height: 618px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+  width: 375px;
+}
+
+.headline-content {
+  width: 327px;
+  height: 384px;
 }
 
 .headline-content div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  left: 24px;
 }
 
 .headline-content div h1 {
@@ -236,6 +252,8 @@
   letter-spacing: 0;
   text-align: left;
   color: #172b4d;
+  left: 24px;
+  margin-bottom: 0;
 }
 
 .headline-content div p {
@@ -246,8 +264,10 @@
   letter-spacing: 0;
   text-align: left;
   width: 327px;
-  height: 146px;
+  height: 156px;
   color: #344563;
+  left: 24px;
+  margin-bottom: 20px;
 }
 
 .lets-connect {
@@ -263,6 +283,7 @@
   order: 0;
   flex-grow: 0;
   gap: 15px;
+  padding-left: 0;
 }
 
 .social-media-links {
@@ -276,6 +297,7 @@
   left: 24px;
   top: 470px;
   border-radius: 0;
+  padding-left: 0;
 }
 
 .social-media-links li {
@@ -929,7 +951,6 @@
   align-items: center;
   padding: 114px 24px;
   gap: 24px;
-  position: absolute;
   left: calc(50% - 375px / 2);
   top: 3506px;
 }
@@ -943,6 +964,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
+  margin-left: 0;
 }
 
 .about-me div {
@@ -1077,6 +1099,7 @@
   flex: none;
   order: 3;
   flex-grow: 0;
+  cursor: pointer;
 }
 
 .button-resume span {
@@ -1197,9 +1220,13 @@
   background-color: #6070ff;
   width: 100%;
   height: 700px;
-  margin-top: 120px;
-  border: 1px;
+  margin-top: 250px;
+  margin-left: 0px;
   border-top-left-radius: 5rem;
+}
+
+.input:enabled {
+  color: #FFFFFF;
 }
 
 .form-sections {
@@ -1244,9 +1271,21 @@ input[type="email"] {
   border: none;
   width: 140px;
   height: 48px;
+  cursor: pointer;
 }
 
 .but:hover {
   padding-right: 25px;
   color: #6070ff;
+  background-color: white;
+}
+
+.but:active {
+  background: #6070FF;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.but:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
