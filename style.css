@@ -101,6 +101,17 @@
   overflow-y: hidden;
 }
 
+.form p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  justify-content: center;
+}
+
 .skill-projects-item p {
   width: 100%;
   height: 72px;
@@ -118,6 +129,16 @@
 
 .languages-dropdown-bar p {
   gap: 200px;
+}
+
+.form h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
 }
 
 .header-background {
@@ -489,21 +510,75 @@
 }
 
 .button {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #396df2;
-  transition: all 0.5s;
-  border: 1px solid #6070ff;
-  background-color: white;
-  width: 152px;
+  width: 124px;
   height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  gap: 10px;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  border-radius: 8px;
 }
 
 .button span {
+  transition: 0.5s;
+  width: 148px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button-resume {
+  width: 162px;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.button-resume span {
   transition: 0.5s;
   width: 148px;
   height: 24px;
@@ -599,6 +674,81 @@
   flex-grow: 0;
   background: #f7f7f9;
   margin-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/contact-form.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 265px 809px;
+  background-color: #6070ff;
+  width: 100%;
+  height: 800px;
+  margin-top: 140px;
+  border: none;
+}
+
+.form-sections {
+  list-style: none;
+  row-gap: 8px;
+}
+
+.form-sections:last-child {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  border: none;
+}
+
+input[type="text"] {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  border: none;
+}
+
+input[type="email"] {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  border: none;
+}
+
+.but {
+  width: 140px;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.but:hover {
+  padding-right: 25px;
+}
+
+.textarea {
+  height: 170px;
+  width: 327px;
+  border-radius: 8px;
 }
 
 @media  screen and (min-width:768px)  {
@@ -753,6 +903,35 @@
     border: 1px solid #DFE1E6;
     border-radius: 24px;
   }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 447px;
+    height: 150px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.button-resume {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 162px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 
   .works-project-one {
     max-width: 1156px;

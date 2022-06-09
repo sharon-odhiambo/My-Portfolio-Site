@@ -196,7 +196,7 @@
         </li>
         </ul>
         <div>
-          <button type="button" class="button"><span>Get my Resume</span></button>
+          <button type="button" class="button-resume"><span>Get my Resume</span></button>
         </div>
       </section>
     <section class="skill-section-items">
@@ -230,27 +230,28 @@
     </section>
     </div>
   </section>
-    <section>
-      <form action="/my-form-page" method="post">
-        <h1>Contact Me</h1>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <ul>
-          <li>
-            <label for="name"></label>
-            <input type="text" id="name" name="user_name" />
-          </li>
-          <li>
-            <label for="mail"></label>
-            <input type="email" id="mail" name="user_mail" />
-          </li>
-          <li>
-            <label for="msg"></label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <button type="submit" class="button">Get In Touch</button>
-          
-        </ul>
-      </form>
-    </section>
+  <section>
+    <form class="form" action="https://formspree.io/f/xeqndgga" method="post">
+      <h1>Contact Me</h1>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+      <ul class="form-sections">
+        <li>
+          <label for="name"></label>
+          <input type="text" id="name" name="user_name" placeholder="Name" maxlength="30" required />
+        </li>
+        <li>
+          <label for="mail"></label>
+          <input type="email" id="mail"  placeholder="Enter Email" name="user_mail" required/>
+        </li>
+        <li>
+          <label for="msg"></label>
+          <textarea class="textarea" id="msg" name="user_message" placeholder="Write your message here" maxlength="500" required></textarea>
+        </li>
+        <li>
+        <button type="submit" class="but">Get In Touch</button>
+      </li>
+      </ul>
+    </form>
+  </section>
 </body>
 </html>
