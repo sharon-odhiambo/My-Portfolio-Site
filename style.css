@@ -963,6 +963,10 @@ input[type="email"] {
     max-height: 846px;
     width: 100%;
     left: 0;
+    background-image: url("./images/desktop-bg.png");
+    background-size: 1200px 600px;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
   .form p {
