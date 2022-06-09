@@ -151,6 +151,16 @@
   overflow-y: hidden;
 }
 
+.form p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
 .skill-projects-item-one p {
   width: 327px;
   height: 72px;
@@ -183,6 +193,16 @@
 
 .languages-dropdown-bar p {
   gap: 200px;
+}
+
+.form h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
 }
 
 .header-background {
@@ -993,14 +1013,14 @@
 .button {
   width: 124px;
   height: 48px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -1010,11 +1030,9 @@
   flex-direction: row;
   padding: 12px;
   gap: 10px;
-  width: 124px;
-  height: 48px;
-  left: 0px;
-  top: calc(50% - 48px/2);
-  border: 1px solid #6070FF;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
@@ -1040,7 +1058,7 @@
 .button-resume {
   width: 162px;
   height: 48px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -1049,12 +1067,12 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   background-color: white;
   box-sizing: border-box;
   padding: 12px;
   gap: 10px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   flex: none;
   order: 3;
@@ -1180,22 +1198,12 @@
   width: 100%;
   height: 800px;
   margin-top: 140px;
-  border: 1px solid #172b4d ;
+  border: 1px solid #172b4d;
 }
 
 .form-sections {
   list-style: none;
   row-gap: 8px;
-}
-
-.form h1 {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
 }
 
 .form-sections:last-child {
@@ -1204,16 +1212,6 @@
   padding-right: 40px;
   width: 327px;
   height: 170px;
-}
-
-.form p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
 }
 
 input[type="text"] {
@@ -1231,7 +1229,7 @@ input[type="email"] {
 .but {
   width: 140px;
   height: 48px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -1240,7 +1238,7 @@ input[type="email"] {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
