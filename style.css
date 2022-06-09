@@ -1212,6 +1212,7 @@
   padding-right: 40px;
   width: 327px;
   height: 170px;
+  border-radius: 8px;
 }
 
 input[type="text"] {
@@ -1243,6 +1244,7 @@ input[type="email"] {
   order: 0;
   flex-grow: 0;
   background-color: white;
+  border-radius: 8px;
 }
 
 .but:hover {
@@ -1252,4 +1254,5 @@ input[type="email"] {
 .textarea {
   height: 170px;
   width: 327px;
+  border-radius: 8px;
 }
