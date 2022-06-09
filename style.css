@@ -163,7 +163,6 @@
 .headline-content div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   margin-left: 20px;
 }
@@ -192,19 +191,16 @@
 }
 
 .lets-connect {
+  width: 117px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7F8CFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  width: 117px;
-  height: 24px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -680,15 +676,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./images/contact-form.png");
+  background-image: url("./images/contact.png");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 265px 809px;
+  background-size: 265px 709px;
   background-color: #6070ff;
   width: 100%;
-  height: 800px;
+  height: 779px;
   margin-top: 140px;
   border: none;
+  border-top-left-radius: 5rem;
 }
 
 .form-sections {
@@ -779,6 +776,9 @@ input[type="email"] {
 
   .works-skills {
     row-gap: 10px;
+    border-collapse: collapse;
+    line-height: 0px;
+    max-height: 3688px;
   }
 
   .works {
@@ -786,10 +786,10 @@ input[type="email"] {
     flex-direction: column;
     align-items: center;
     padding: 142px;
-    gap: 42px;
+    gap: 162px;
     position: absolute;
     max-width: 1440px;
-    max-height: 2194px;
+    max-height: 2694px;
     left: 0px;
   }
 
@@ -896,12 +896,11 @@ input[type="email"] {
   .about-me-skills {
     display: flex;
     flex-direction: row;
-    max-width: 1156px;
-    max-height: 496px;
-    left: 142px;
-    background: #FFFFFF;
-    border: 1px solid #DFE1E6;
-    border-radius: 24px;
+    align-items: center;
+    max-width: 1440px;
+    max-height: 924px;
+    width: 100%;
+    left: 260px;
   }
 
   .about-me {
@@ -963,7 +962,23 @@ input[type="email"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1440px;
+    max-height: 846px;
     width: 100%;
-    left: 260px;
+    left: 0px;
+  }
+
+  .form p {
+    width: 569px;
+    height: 102px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #EBEBFF;
+    flex: none;
+    flex-grow: 0;
   }
 }
