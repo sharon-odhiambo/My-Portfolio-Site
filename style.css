@@ -107,15 +107,6 @@
   gap: 200px;
 }
 
-.project-details p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-}
-
 .project-info p {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -377,6 +368,7 @@
   letter-spacing: 0;
   text-align: left;
   font-style: normal;
+  color: #344563;
 }
 
 .project-details :nth-child(2) {
@@ -628,11 +620,11 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 12px;
     position: absolute;
     width: 920px;
-    height: 268px;
+    height: 288px;
     left: 260px;
+    top: 189px;
   }
 
   .works-skills {
