@@ -361,45 +361,50 @@
       </section>
     </section>
     <section class="form">
-      <form action="/my-form-page" method="post">
-        <div class="header">
-          <h4>Contact Me</h4>
-          <p class="info">
-            If you have an application you<br />are interested in developing,
-            a,<br />that you need built or a<br />project that needs coding.
-            I’d<br />love to help with it
-          </p>
-        </div>
-        <div class="forms">
-          <ul>
-            <li>
-              <label for="name"></label>
-              <input
-                type="text"
-                id="name"
-                name="user_name"
-                placeholder="your name "
-              />
-            </li>
-            <li>
-              <label for="mail"></label>
-              <input
-                type="text"
-                id="mail"
-                name="user_mail"
-                placeholder="your email "
-              />
-            </li>
-            <li>
-              <label for="msg"></label>
-              <textarea class="text" id="msg" name="user_message" placeholder="write something here"></textarea>
-            </li>
-            <li>
-              <button class="but" type="submit">Get in Touch</button>
-            </li>
-            
-          </ul>
-        </div>
+      <form action="https://formspree.io/f/xeqndgga" method="post">
+        <h1>Contact Me</h1>
+        <p>
+          If you have an application you<br />are interested in developing, a<br />feature
+          that you need built or a<br />project that needs coding. I’d<br />
+          love to help with it
+        </p>
+        <ul class="form-sections">
+          <li>
+            <label for="name"></label>
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              maxlength="30"
+              placeholder="your name "
+              required
+            />
+          </li>
+          <li>
+            <label for="mail"></label>
+            <input
+              type="email"
+              id="mail"
+              name="user_mail"
+              placeholder="your email "
+              required
+            />
+          </li>
+          <li>
+            <label for="msg"></label>
+            <textarea
+              class="textarea"
+              id="msg"
+              name="user_message"
+              maxlength="500"
+              placeholder="write something here"
+              required
+            ></textarea>
+          </li>
+          <li>
+            <button class="but" type="submit">Get In Touch</button>
+          </li>
+        </ul>
       </form>
     </section>
   </body>
