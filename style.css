@@ -112,7 +112,6 @@
 
 .skill-projects-item {
   width: 327px;
-
 }
 
 .skill-projects-item p {
@@ -794,8 +793,26 @@ input[type="email"] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1398px 622px;
-    background: #fff;
+    background-color: #fff;
     border-bottom-left-radius: 5rem;
+  }
+
+  .form p {
+    width: 569px;
+    height: 102px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+    flex: none;
+    flex-grow: 0;
+  }
+
+  .languages-dropdown-bar p {
+    width: 447px;
   }
 
   .headline-content {
@@ -815,7 +832,7 @@ input[type="email"] {
     margin-bottom: 0;
   }
 
-  .headline-content div  h1 {
+  .headline-content div h1 {
     width: 920px;
   }
 
@@ -994,7 +1011,7 @@ input[type="email"] {
     height: 114px;
     margin-bottom: 0;
   }
-  
+
   .skill-items ul li span {
     flex-direction: column;
     align-items: center;
@@ -1015,10 +1032,6 @@ input[type="email"] {
   }
 
   .skill-projects-item {
-    width: 447px;
-  }
-
-  .languages-dropdown-bar p {
     width: 447px;
   }
 
@@ -1075,19 +1088,5 @@ input[type="email"] {
     background-size: 1200px 600px;
     background-repeat: no-repeat;
     background-position: right;
-  }
-
-  .form p {
-    width: 569px;
-    height: 102px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #ebebff;
-    flex: none;
-    flex-grow: 0;
   }
 }
