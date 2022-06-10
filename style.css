@@ -14,7 +14,7 @@
   margin: auto;
   overflow-x: hidden;
   background: #e5e5e5;
-  position:absolute;
+  position: absolute;
   width: 100%;
 }
 
@@ -737,7 +737,7 @@ input[type="email"] {
   flex-direction: row;
   align-items: center;
   padding: 12px 16px;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 8px;
   flex: none;
   order: 3;
@@ -757,7 +757,7 @@ input[type="email"] {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -773,14 +773,14 @@ input[type="email"] {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #5E6C84;
+  color: #5e6c84;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .but:enabled {
-  color: #6070FF;
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
