@@ -13,6 +13,7 @@
   font-family: 'Poppins', sans-serif;
   margin: auto;
   overflow-x: hidden;
+  background: #e5e5e5;
 }
 
 .headline.active {
@@ -111,14 +112,12 @@
 }
 
 .skill-projects-item {
-  width: 327px;
+  width: 100%;
 }
 
 .skill-projects-item p {
-  width: 234px;
   height: 72px;
   justify-content: space-between;
-  padding: 8px;
   border-radius: 8px;
 }
 
@@ -509,7 +508,6 @@
 
 .skill-section-items ul li p {
   width: 100%;
-  height: 72px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -519,7 +517,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
   display: flex;
   align-items: center;
   color: #000;
@@ -638,7 +635,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 327px;
+  width: 100%;
   height: 464.15px;
   flex: none;
   order: 1;
@@ -649,7 +646,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 12px;
   gap: 12px;
   width: 100%;
@@ -765,19 +761,41 @@ input[type="email"] {
 }
 
 .but:hover {
-  padding-right: 25px;
-  color: #6070ff;
-  background-color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .but:active {
-  background: #6070ff;
+  color: #6070ff;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .but:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #5E6C84;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.but:enabled {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1078,15 +1096,16 @@ input[type="email"] {
 
   .form {
     display: flex;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
     max-height: 846px;
     width: 100%;
-    left: 0;
-    background-image: url("./images/desktop-bg.png");
-    background-size: 1200px 600px;
+    margin-left: 0;
+    background-image: url("./images/desktop-bg.svg");
+    background-size: 1290.66px 718.7px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: absolute;
   }
 }
