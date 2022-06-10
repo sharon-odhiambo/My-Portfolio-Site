@@ -508,7 +508,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  left: 12px;
+  padding-left: 0;
   right: 78px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -632,7 +632,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 100%;
+  width: 327px;
   height: 464.15px;
   flex: none;
   order: 1;
@@ -649,8 +649,12 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  padding: 0;
 }
 
+.skill-section-items li {
+  padding: 0;
+}
 .languages-dropdown-bar {
   display: inline-block;
   flex-direction: column;
