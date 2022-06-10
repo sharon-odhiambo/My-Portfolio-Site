@@ -1,5 +1,4 @@
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio-Site
 -This is my first portfolio site using Microverse templates
@@ -36,7 +35,7 @@ HTML, CSS
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sharon-odhiambo-4333a0163/)
 
 ## 🤝 Contributing
-Coding partners
+@https://github.com/Hirwacardinalloic
 
 Contributions, issues, and feature requests are welcome!
 
