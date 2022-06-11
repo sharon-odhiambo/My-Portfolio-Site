@@ -35,6 +35,7 @@
   list-style: none;
   justify-content: space-between;
   overflow-x: hidden;
+  transition: all 1s ease-out;
 }
 
 .logo {
@@ -83,6 +84,11 @@
   color: white;
   font-size: 32px;
   font-weight: 600;
+}
+
+.mobile-nav-link a:hover,
+.mobile-nav-link a:focus {
+  background-color: mistyrose;
 }
 
 .menu-button {
@@ -239,8 +245,15 @@
 .social-media-links li {
   justify-content: flex-start;
   margin-right: 20px;
+  transition: height 2s, width 2s, transform 2s;
 }
 
+.social-media-links li:hover {
+  background-color: whitesmoke;
+  transform: rotate(360 deg);
+  width: 200px;
+  height: 50px;
+}
 .works-skills {
   row-gap: 20px;
   width: 100%;
