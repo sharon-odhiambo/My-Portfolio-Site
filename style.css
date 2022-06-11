@@ -18,6 +18,18 @@
   width: 100%;
 }
 
+@keyframes logo-motion {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .headline.active {
   filter: blur(4px);
   background-color: white;
@@ -246,13 +258,15 @@
   justify-content: flex-start;
   margin-right: 20px;
   transition: height 2s, width 2s, transform 2s;
+  transition-property: opacity, left;
+  transition-duration: 3s, 5s;
 }
 
 .social-media-links li:hover {
   background-color: whitesmoke;
   transform: rotate(360 deg);
   width: 200px;
-  height: 50px;
+  height: 30px;
 }
 .works-skills {
   row-gap: 20px;
