@@ -254,20 +254,6 @@
   padding-left: 0;
 }
 
-.social-media-links li {
-  justify-content: flex-start;
-  margin-right: 20px;
-  transition: height 2s, width 2s, transform 2s;
-  transition-property: opacity, left;
-  transition-duration: 3s, 5s;
-}
-
-.social-media-links li:hover {
-  background-color: whitesmoke;
-  transform: rotate(360 deg);
-  width: 200px;
-  height: 30px;
-}
 .works-skills {
   row-gap: 20px;
   width: 100%;
@@ -695,6 +681,14 @@
   flex-grow: 0;
 }
 
+.social-media-links li {
+  justify-content: flex-start;
+  margin-right: 20px;
+  transition: height 2s, width 2s, transform 2s;
+  transition-property: opacity, left;
+  transition-duration: 3s, 5s;
+}
+
 .skill-items ul {
   display: flex;
   flex-direction: column;
@@ -714,6 +708,13 @@
   flex-grow: 0;
   background: #f7f7f9;
   margin-bottom: 8px;
+}
+
+.social-media-links li:hover {
+  background-color: whitesmoke;
+  transform: rotate(360 deg);
+  width: 200px;
+  height: 30px;
 }
 
 .form {
