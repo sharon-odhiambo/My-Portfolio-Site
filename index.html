@@ -16,15 +16,16 @@
 
 <body> 
 <div class="header-background">
+  <section>
   <header class="navigation">
     <a href="logo" class="logo">My logo</a>
     <nav>
       <div class="mobile-navbar" id="mobile-navbar">
-        <img class="exit-btn" src="./images/cancel-icon.png" alt="hamburger cancel button">
+        <img class="exit-btn" width="18" height="16" src="./images/cancel-icon.png" alt="hamburger cancel button">
         <ul class="mobile-nav-menu" id="mobile-nav-menu">
-          <li class="mobile-nav-link"><a href="#works">Portfolio</a></li>
-          <li class="mobile-nav-link"><a href="#about-myself">About</a></li>
-          <li class="mobile-nav-link"><a href="#form-section">Contact</a></li>
+          <li class="mobile-nav-link"><a href="#works-sect">Portfolio</a></li>
+          <li class="mobile-nav-link"><a href="#about-me">About</a></li>
+          <li class="mobile-nav-link"><a href="#form">Contact</a></li>
         </ul>
         <div class="menu-button">
           <img class="menu-button" width="18" height="12" src="images/Union.svg" alt="menu-icon">
@@ -32,7 +33,7 @@
       </div>
     </nav>
   </header>
-
+  </section>
   <section class="headline" id="headline"> 
     <div class="headline-content">
       <div>
@@ -63,7 +64,7 @@
     </section>
   </div>
   <section class="works-skills">
-    <section class="works">
+    <sectionc class="works-sect" id="works-sect" name= "works-sect" >
     <div class="works-project">
       <section class="works-top">
       <div class="snapshoot-one"></div>
@@ -171,7 +172,7 @@
     </div>
     </section>
     <div class="about-me-skills">
-      <section class="about-me">
+      <section class="about-me" id="about-me" name="about-me">
         <div>
           <h3>About Myself</h3>
         <p>I'm a software developer! I can help you build a product , feature or website <br> 
@@ -234,7 +235,7 @@
     </div>
   </section>
   <section>
-    <form class="form" action="https://formspree.io/f/xeqndgga" method="post">
+    <form class="form" id="form" name="form" action="https://formspree.io/f/xeqndgga" method="post">
       <h4>Contact Me</h4>
       <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
       <ul class="form-sections">

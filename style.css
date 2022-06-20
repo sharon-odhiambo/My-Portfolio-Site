@@ -18,18 +18,6 @@
   width: 100%;
 }
 
-@keyframes logo-motion {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 .headline.active {
   filter: blur(4px);
   background-color: white;
@@ -70,8 +58,9 @@
 
 .exit-btn {
   display: none;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-right: 1.25rem;
+  color: #ffffff;
 }
 
 .mobile-nav-menu {
@@ -85,9 +74,7 @@
   width: 95%;
   height: 100%;
   left: 12px;
-  margin: 0 auto;
   top: 60px;
-  background-color: rgb(96, 112, 255)
 }
 
 .mobile-navbar.active {
@@ -107,15 +94,11 @@
 }
 
 .mobile-nav-link a {
-  height: 24px;
-  left: 0;
-  right: 68px;
-  top: calc(50% - 24px / 2);
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 64px;
   align-items: center;
   color: #ffffff;
   text-decoration: none;
@@ -202,12 +185,11 @@
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: white;
-  height: 618px;
+  height: 450px;
   align-items: center;
   justify-content: center;
   margin-left: 24px;
-  width: 100%;
+  width: 327px;
 }
 
 .headline-content {
@@ -283,7 +265,7 @@
   height: 4088px;
 }
 
-.works {
+.works-sect {
   display: grid;
   justify-content: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -887,7 +869,7 @@ input[type="email"] {
     position: absolute;
     width: 920px;
     height: 288px;
-    left: 260px;
+    left: 60px;
     top: 189px;
   }
 
@@ -913,7 +895,7 @@ input[type="email"] {
     max-width: 1440px;
   }
 
-  .works {
+  .works-sect {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -946,7 +928,7 @@ input[type="email"] {
     gap: 8px;
     width: 259px;
     height: 40px;
-    left: 1039px;
+    left: 739px;
     top: 16px;
   }
 
@@ -954,18 +936,12 @@ input[type="email"] {
     text-decoration: none;
     color: #344563;
     font-weight: 600;
-    width: 63px;
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin: 12px;
   }
 
   .menu-button {
@@ -996,7 +972,7 @@ input[type="email"] {
 
   .snapshoot-three {
     height: 448px;
-    width: 544px;
+    width: 100%;
     left: 16px;
     top: 16px;
     border-radius: 8px;
@@ -1007,7 +983,7 @@ input[type="email"] {
 
   .snapshoot-four {
     height: 448px;
-    width: 544px;
+    width: 100%;
     left: 16px;
     top: 16px;
     border-radius: 8px;
@@ -1117,7 +1093,7 @@ input[type="email"] {
 
   .works-project-one {
     max-width: 1156px;
-    max-height: 496px;
+    max-height: 500px;
     flex-direction: row-reverse;
   }
 
