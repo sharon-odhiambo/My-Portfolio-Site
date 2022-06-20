@@ -68,6 +68,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+.exit-btn {
+  margin-top: 1.5rem;
+  margin-right: 1.25rem;
+}
+
 .mobile-nav-menu {
   display: flex;
   list-style: none;
