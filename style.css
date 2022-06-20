@@ -69,12 +69,13 @@
 }
 
 .exit-btn {
+  display: none;
   margin-top: 1.5rem;
   margin-right: 1.25rem;
 }
 
 .mobile-nav-menu {
-  display: flex;
+  display: none;
   list-style: none;
   overflow-x: hidden;
   transition: all 1s ease-out;
