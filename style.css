@@ -28,6 +28,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 255, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 .overlay .active {
@@ -75,9 +76,7 @@
 .exit-btn {
   display: none;
   margin-top: 2.5rem;
-  margin-left: 25.25rem;
-  color: #fff;
-  border: 2px solid #67798e;
+  margin-left: 20.25rem;
 }
 
 .mobile-nav-menu {
@@ -1143,5 +1142,21 @@ input[type="email"] {
     background-image: url("./images/desktop-bg.svg");
     background-size: 1290.66px 718.7px;
     background-repeat: no-repeat;
+  }
+
+  .overlay {
+    display: flex;
+    background-color: #fff;
+    left: 1039px;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: unset;
+    padding: 0;
+    gap: 8px;
+    width: 259px;
+    height: 40px;
+    top: 16px;
   }
 }
