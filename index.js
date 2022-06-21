@@ -1,7 +1,7 @@
 const hamburgerButton = document.querySelector('.menu-button');
 const navButton = document.querySelector('.mobile-nav-menu');
 const exitButton = document.querySelector('.exit-btn');
-const navOptions = document.querySelectorAll('.mobile-nav-link a');
+const navOptions = document.querySelectorAll('.mobile-nav-link');
 const headSection = document.querySelector('.header-background');
 // Open Menu Bar
 hamburgerButton.addEventListener('click', () => {
@@ -18,7 +18,7 @@ exitButton.addEventListener('click', () => {
   hamburgerButton.style.display = ('block');
 });
 // Close Menu Bar Using navOptions
-navOptions.foraddEventListener('click', () => {
+navOptions.forEachaddEventListener('click', () => {
   navButton.style.display = ('none');
   exitButton.style.display = ('none');
   headSection.style.backgroundColor = ('#ffffff');
