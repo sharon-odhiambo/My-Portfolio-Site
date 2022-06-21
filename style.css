@@ -18,16 +18,22 @@
   width: 100%;
 }
 
-@keyframes logo-motion {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 592px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, 0.6);
+  backdrop-filter: blur(4px);
+}
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+.overlay .active {
+  opacity: 0.6;
+  pointer-events: all;
 }
 
 .headline.active {
@@ -40,14 +46,6 @@
   width: 100%;
   height: 5.5rem;
   justify-content: space-between;
-}
-
-.mobile-nav-menu {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  overflow-x: hidden;
-  transition: all 1s ease-out;
 }
 
 .logo {
@@ -64,9 +62,8 @@
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 14px 22px;
   width: 100px;
-  height: 40px;
   left: 12px;
   top: calc(50% - 40px / 2);
 }
@@ -74,6 +71,26 @@
 .mobile-navbar {
   background-color: transparent;
   transition: all 0.3s ease-in-out;
+}
+
+.exit-btn {
+  display: none;
+  margin-top: 2.5rem;
+  margin-left: 20.25rem;
+}
+
+.mobile-nav-menu {
+  display: none;
+  list-style: none;
+  overflow-x: hidden;
+  transition: all 1s ease-out;
+  flex-direction: column;
+  position: absolute;
+  gap: 8px;
+  width: 95%;
+  height: 100%;
+  left: 12px;
+  top: 60px;
 }
 
 .mobile-navbar.active {
@@ -93,10 +110,14 @@
 }
 
 .mobile-nav-link a {
-  text-decoration: none;
-  color: white;
-  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   font-weight: 600;
+  font-size: 32px;
+  line-height: 64px;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .mobile-nav-link a:hover,
@@ -177,11 +198,9 @@
 
 .headline {
   background-image: url('./images/header-bg.svg');
-  background-position: absolute;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: white;
-  height: 618px;
+  background-size: 90%;
+  height: 450px;
   align-items: center;
   justify-content: center;
   margin-left: 24px;
@@ -258,10 +277,9 @@
 .works-skills {
   row-gap: 20px;
   width: 100%;
-  height: 4088px;
 }
 
-.works {
+.works-sect {
   display: grid;
   justify-content: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -485,7 +503,6 @@
   height: 409px;
   width: 100%;
   left: 375px;
-  border-radius: [object object]px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -646,7 +663,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 327px;
+  width: 100%;
   height: 464.15px;
   flex: none;
   order: 1;
@@ -713,7 +730,6 @@
 
 .social-media-links li:hover {
   background-color: whitesmoke;
-  transform: rotate(360 deg);
   width: 200px;
   height: 30px;
 }
@@ -865,7 +881,7 @@ input[type="email"] {
     position: absolute;
     width: 920px;
     height: 288px;
-    left: 260px;
+    left: 60px;
     top: 189px;
   }
 
@@ -891,7 +907,7 @@ input[type="email"] {
     max-width: 1440px;
   }
 
-  .works {
+  .works-sect {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -920,6 +936,7 @@ input[type="email"] {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    position: unset;
     padding: 0;
     gap: 8px;
     width: 259px;
@@ -932,18 +949,12 @@ input[type="email"] {
     text-decoration: none;
     color: #344563;
     font-weight: 600;
-    width: 63px;
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin: 12px;
   }
 
   .menu-button {
@@ -974,7 +985,7 @@ input[type="email"] {
 
   .snapshoot-three {
     height: 448px;
-    width: 544px;
+    width: 100%;
     left: 16px;
     top: 16px;
     border-radius: 8px;
@@ -985,7 +996,7 @@ input[type="email"] {
 
   .snapshoot-four {
     height: 448px;
-    width: 544px;
+    width: 100%;
     left: 16px;
     top: 16px;
     border-radius: 8px;
@@ -1095,7 +1106,7 @@ input[type="email"] {
 
   .works-project-one {
     max-width: 1156px;
-    max-height: 496px;
+    max-height: 500px;
     flex-direction: row-reverse;
   }
 
@@ -1125,11 +1136,27 @@ input[type="email"] {
     align-items: center;
     max-width: 1440px;
     max-height: 846px;
+    top: 3906px;
     width: 100%;
     margin-left: 0;
     background-image: url("./images/desktop-bg.svg");
     background-size: 1290.66px 718.7px;
     background-repeat: no-repeat;
-    background-position: absolute;
+  }
+
+  .overlay {
+    display: flex;
+    background-color: #fff;
+    left: 1039px;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: unset;
+    padding: 0;
+    gap: 8px;
+    width: 259px;
+    height: 40px;
+    top: 16px;
   }
 }
