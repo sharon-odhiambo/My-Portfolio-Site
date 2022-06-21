@@ -183,7 +183,7 @@
 .headline {
   background-image: url('./images/header-bg.svg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 90%;
   height: 450px;
   align-items: center;
   justify-content: center;

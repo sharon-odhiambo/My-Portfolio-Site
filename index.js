@@ -18,9 +18,11 @@ exitButton.addEventListener('click', () => {
   hamburgerButton.style.display = ('block');
 });
 // Close Menu Bar Using navOptions
-navOptions.forEachaddEventListener('click', () => {
-  navButton.style.display = ('none');
-  exitButton.style.display = ('none');
-  headSection.style.backgroundColor = ('#ffffff');
-  hamburgerButton.style.display = ('block');
+navOptions.forEach((navOption) => {
+  navOption.addEventListener('click', () => {
+    navButton.style.display = ('none');
+    exitButton.style.display = ('none');
+    headSection.style.backgroundColor = ('#ffffff');
+    hamburgerButton.style.display = ('block');
+  });
 });
