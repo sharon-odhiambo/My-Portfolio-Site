@@ -60,6 +60,7 @@
   margin-top: 1rem;
   margin-right: 1.25rem;
   color: #fff;
+  border: 2px solid #67798e;
 }
 
 .mobile-nav-menu {
@@ -187,7 +188,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 24px;
-  width: 327px;
+  width: 100%;
 }
 
 .headline-content {
@@ -646,7 +647,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 327px;
+  width: 100%;
   height: 464.15px;
   flex: none;
   order: 1;
