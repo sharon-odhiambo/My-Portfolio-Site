@@ -29,7 +29,7 @@ navOptions.forEach((navOption) => {
 //Works-Porjects popup-window
 const worksection = [
   {
-  id: works-project,
+  id: 1,
   title: 'Tonic',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   featuredImage: './images/SnapshootPortfolio.svg',
@@ -40,7 +40,7 @@ const worksection = [
   seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
   {
-    id: works-project-one,
+    id: 2,
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: './images/SnapshootPortfolio1.svg',
@@ -51,7 +51,7 @@ const worksection = [
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
   {
-  id: works-project,
+  id: 3,
   title: 'Tonic',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   featuredImage: './images/SnapshootPortfolio2.svg',
@@ -62,7 +62,7 @@ const worksection = [
   seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
   {
-    id: works-project-one,
+    id: 4,
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: './images/SnapshootPortfolio3.svg',
@@ -73,7 +73,44 @@ const worksection = [
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   }
 ];
-const popUpWindow = document.querySelector('.popup-window');
+// // Create Works Section
+// function createWorks(myArray) {
+//   console.log('Sharon');
+//   const workSection = document.querySelector('#works-sect');
+//   for(i = 0; i < myArray.length; i++) {
+//     const doc = `
+//     <div class="works-project">
+//     <div class="works-top">
+//     <div class="snapshoot-one"></div>
+//     </div>
+//     <div class="project-info">
+//     <h2>Tonic</h2>
+//     <ul class="project-details">
+//         <li>Canopy</li>
+//         <li>BackEnd Dev</li>
+//         <li>2015</li>
+//     </ul>
+//     <div>
+//       <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+//     </div>
+//     <div>
+//     <ul class="languages">
+//       <li>html</li>
+//       <li>css</li>
+//       <li>javascript</li>
+//     </ul>
+//     </div>
+//     <button type="button" class="button"><span>See Project</span></button>
+//   </div>
+//   </div>`;
+//   workSection += doc;
+//   }
+// }
+// const popupButton = document.getElementById('popup');
+// popupButton.addEventListener('click', createWorks(worksection));
+
+
+const popUpWindow = document.querySelector('.mobile-popup');
 function popUp(index) {
   popUpWindow.classList.add('popUp');
   document.querySelector('#popup-header').innerHTML = projects[index].id;
