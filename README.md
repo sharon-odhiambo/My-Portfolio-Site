@@ -26,6 +26,10 @@ $ cd My-Portfolio-Site
 ### Prerequisites
 HTML, CSS
 
+### Live Demo
+
+Live Version - https://sharon-odhiambo.github.io/
+
 ## Authors
 
 👤 **Author1**
