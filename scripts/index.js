@@ -27,12 +27,13 @@ navOptions.forEach((navOption) => {
   });
 });
 // Create Form Validation
-const form  = document.getElementById('form');
-const email = document.getElementById['mail'];
-form.addEventListener('submit', (e) => {
-  if (email.value !== email.value.toLowerCase()) {
-    error.Message= 'Sorry! Please use all lowercase';
+const getInTouch = document.getElementById('form');
+const email = getInTouch.elements['mail'].value;
+const error = getInTouch.elements['error-message'];
+getInTouch.addEventListener('submit', (event) => {
+  if (email !== email.toLowerCase()) {
+    error.textMessage = 'Sorry! Please use all lowercase.';
     error.style.color = 'red';
-    e.preventDefault;
+    event.preventDefault();
   };
 });
