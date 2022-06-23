@@ -1087,7 +1087,7 @@ input[type="email"] {
     display: none;
   }
 
-  .snapshoot-one {
+  .snapshoot-1 {
     height: 448px;
     width: 100%;
     left: 16px;
@@ -1098,7 +1098,7 @@ input[type="email"] {
     background-position: center;
   }
 
-  .snapshoot-two {
+  .snapshoot-2 {
     height: 448px;
     width: 100%;
     left: 16px;
@@ -1109,7 +1109,7 @@ input[type="email"] {
     background-position: center;
   }
 
-  .snapshoot-three {
+  .snapshoot-3 {
     height: 448px;
     width: 100%;
     left: 16px;
@@ -1120,7 +1120,7 @@ input[type="email"] {
     background-position: center;
   }
 
-  .snapshoot-four {
+  .snapshoot-4 {
     height: 448px;
     width: 100%;
     left: 16px;

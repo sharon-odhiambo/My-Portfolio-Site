@@ -103,37 +103,37 @@ function createWorks(projectSection) {
     <button type="button" class="button" id="btnSeeProject${projectSection[i].id}"><span>See Project ${projectSection[i].id}</span></button>
   </div>
   </div>`;
-  workSection.innerHTML += doc;
   }
+  workSection.innerHTML += doc;
 }
 // const popupButton = document.getElementById('popup');
-document.addEventListener('DomContentLoaded', createWorks(projectSection));
+document.addEventListener('DomContentLoaded', createWorks);
 
 
-const popUpWindow = document.querySelector('.mobile-popup');
-function popUp(index) {
-  popUpWindow.classList.add('popUp');
-  document.querySelector('#popup-header').innerHTML = projects[index].id;
-  document.querySelector('#popup-header').innerHTML = projects[index].title;
-  document.querySelector('#popup-description').innerHTML = projects[index].description;
-  document.querySelector('#popup-image').src = `${projects[index].featuredImage}`;
-  document.querySelector('#popup-image-alt').innerHTML = projects[index].altMessage;
-  document.querySelector('#popup-overview').innerHTML = projects[index].projectsOverview;
-  document.querySelector('#popup-technologies').innerHTML = projects[index].technologies;
-  document.querySelector('#seeLivePopup').href = projects[index].seeLive;
-  document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
-}
-function popUpClose() {
-  popUpWindow.classList.remove('popUp');
-}
-const closePopUpWindow = document.querySelector('#closePopup');
-closePopUpWindow.addEventListener('click', popUpClose);
-const seeProject = document.querySelectorAll('.button');
-seeProject.forEach((element) => {
-  element.addEventListener('click', () => {
-    popUp(element.dataset.id);
-  });
-});
+// const popUpWindow = document.querySelector('.mobile-popup');
+// function popUp(index) {
+//   popUpWindow.classList.add('popUp');
+//   document.querySelector('#popup-header').innerHTML = projects[index].id;
+//   document.querySelector('#popup-header').innerHTML = projects[index].title;
+//   document.querySelector('#popup-description').innerHTML = projects[index].description;
+//   document.querySelector('#popup-image').src = `${projects[index].featuredImage}`;
+//   document.querySelector('#popup-image-alt').innerHTML = projects[index].altMessage;
+//   document.querySelector('#popup-overview').innerHTML = projects[index].projectsOverview;
+//   document.querySelector('#popup-technologies').innerHTML = projects[index].technologies;
+//   document.querySelector('#seeLivePopup').href = projects[index].seeLive;
+//   document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
+// }
+// function popUpClose() {
+//   popUpWindow.classList.remove('popUp');
+// }
+// const closePopUpWindow = document.querySelector('#closePopup');
+// closePopUpWindow.addEventListener('click', popUpClose);
+// const seeProject = document.querySelectorAll('.button');
+// seeProject.forEach((element) => {
+//   element.addEventListener('click', () => {
+//     popUp(element.dataset.id);
+//   });
+// });
 // function createWorks(myArray) {
 //   const projectSection = document.querySelector('#works-sect');
 //   for(i = 0; i < myArray.length; i++) {
