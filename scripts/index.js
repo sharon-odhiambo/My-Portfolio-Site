@@ -26,3 +26,13 @@ navOptions.forEach((navOption) => {
     hamburgerButton.style.display = ('block');
   });
 });
+// Create Form Validation
+const form  = document.getElementById('form');
+const email = document.getElementById['mail'];
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    error.Message= 'Sorry! Please use all lowercase';
+    error.style.color = 'red';
+    e.preventDefault;
+  };
+});
