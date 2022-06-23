@@ -100,7 +100,7 @@ function createWorks(worksection) {
       <li>${worksection[i].technoligies[2]}</li>
     </ul>
     </div>
-    <button type="button" class="button" id="btnSeeProject${worksection[i].id}"><span>See Project ${worksection[i].id}</span></button>
+    <button type="button" class="button" id="btnSeeProject${worksection[i].id}"><span>See Project</span></button>
   </div>
   </div>`;
   workSection.innerHTML += doc;
@@ -108,47 +108,27 @@ function createWorks(worksection) {
 }
 // const popupButton = document.getElementById('popup');
 document.addEventListener('DomContentLoaded', createWorks(worksection));
-// // Create Popup window
-// const Popup = document.querySelector('#mobile-popup');
-// const openPopups = document.querySelectorAll('.button');
-// const closeButton = document.querySelector('#close-popup');
-// // Open Popup Window
-// openPopups.forEach((openPopup) => {
-//   openPopup.addEventListener('click', () => {
-//     button.addEventListener('click', () => {
-//       document.body.style.position = 'fixed';
-//       document.body.style.overflow = 'hidden';
-//       popUpWindow.classList.remove('hide');
-//   });
-// });
-// });
-// // Close Popup Window
-// closeButton.addEventListener('click', () => {
-//   button.addEventListener('click', () => {
-//     document.body.style.position = 'relative';
-//     document.body.style.overflow = 'scroll';
-//     popUpWindow.classList.add('hide');
-//     // hamburgerButton.style.position = 'absolute';
-//     hamburgerButton.style.top = '0';
-//     hamburgerButton.style.margin = '45px 0 0 0';
-//   });
-// });
+//Create Popup Window
 const popUpWindow = document.querySelector('.mobile-popup');
 const seeProject = document.querySelectorAll('.button');
+// Open Popup
 seeProject.forEach((button) => {
   button.addEventListener('click', () => {
+    // popUpWindow.style.display = 'block';
     document.body.style.position = 'fixed';
     document.body.style.overflow = 'hidden';
     popUpWindow.classList.remove('hide');
   });
 });
+// Close Popup
 const closePopup = document.querySelectorAll('#close-popup');
 closePopup.forEach((button) => {
   button.addEventListener('click', () => {
+    // popUpWindow.style.display = 'none';
     document.body.style.position = 'relative';
     document.body.style.overflow = 'scroll';
     popUpWindow.classList.add('hide');
-    // hamburgerButton.style.position = 'absolute';
+    hamburgerButton.style.position = 'absolute';
     hamburgerButton.style.top = '0';
     hamburgerButton.style.margin = '45px 0 0 0';
   });
