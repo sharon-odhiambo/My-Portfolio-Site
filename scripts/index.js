@@ -3,6 +3,7 @@ const navButton = document.querySelector('.mobile-nav-menu');
 const exitButton = document.querySelector('.exit-btn');
 const navOptions = document.querySelectorAll('.mobile-nav-link');
 const headSection = document.querySelector('.overlay');
+const poupPage = document.querySelector('.popup-overlay');
 // Open Menu Bar
 hamburgerButton.addEventListener('click', () => {
   navButton.style.display = ('block');
@@ -26,18 +27,19 @@ navOptions.forEach((navOption) => {
     hamburgerButton.style.display = ('block');
   });
 });
-//Works-Porjects popup-window
+// Create Form Validation
+// Works-Porjects popup-window
 const worksection = [
   {
-  id: 1,
-  title: 'Tonic',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: './images/SnapshootPortfolio.svg',
-  altmessage: 'Tonic-project',
-  projects_overview: ['CANOPY', 'Full Stack Dev', '2022'],
-  technoligies: ['html', 'css', 'javaScript'],
-  seeLive: 'https://sharon-odhiambo.github.io/',
-  seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
+    id: 1,
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: './images/SnapshootPortfolio.svg',
+    altmessage: 'Tonic-project',
+    projects_overview: ['CANOPY', 'Full Stack Dev', '2022'],
+    technoligies: ['html', 'css', 'javaScript'],
+    seeLive: 'https://sharon-odhiambo.github.io/',
+    seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
   {
     id: 2,
@@ -51,15 +53,15 @@ const worksection = [
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
   {
-  id: 3,
-  title: 'Tonic',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: './images/SnapshootPortfolio2.svg',
-  altMessage: 'Tonic-project',
-  projects_overview: ['CANOPY', 'Full Stack Dev', '2022'],
-  technoligies: ['html', 'css', 'javaScript'],
-  seeLive: 'https://sharon-odhiambo.github.io/',
-  seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
+    id: 3,
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: './images/SnapshootPortfolio2.svg',
+    altMessage: 'Tonic-project',
+    projects_overview: ['CANOPY', 'Full Stack Dev', '2022'],
+    technoligies: ['html', 'css', 'javaScript'],
+    seeLive: 'https://sharon-odhiambo.github.io/',
+    seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
   {
     id: 4,
@@ -71,13 +73,12 @@ const worksection = [
     technoligies: ['html', 'css', 'javaScript'],
     seeLive: 'https://sharon-odhiambo.github.io/',
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
-  }
+  },
 ];
 // Create Works Section
 function createWorks(worksection) {
-  console.log('Sharon');
   const workSection = document.querySelector('#works-sect');
-  for(i = 0; i < worksection.length; i++) {
+  for (let i = 0; i < worksection.length; i += 1) {
     const doc = `
     <div class="works-project">
     <div class="works-top">
@@ -103,33 +104,42 @@ function createWorks(worksection) {
     <button type="button" class="button" id="btnSeeProject${worksection[i].id}"><span>See Project</span></button>
   </div>
   </div>`;
-  workSection.innerHTML += doc;
+    workSection.innerHTML += doc;
   }
 }
 // const popupButton = document.getElementById('popup');
 document.addEventListener('DomContentLoaded', createWorks(worksection));
-//Create Popup Window
+// Create Popup Window
 const popUpWindow = document.querySelector('.mobile-popup');
 const seeProject = document.querySelectorAll('.button');
+const higherPage = document.querySelector('.headline-content');
+const worksUp = document.querySelector('.works-sect');
 // Open Popup
 seeProject.forEach((button) => {
   button.addEventListener('click', () => {
-    // popUpWindow.style.display = 'block';
     document.body.style.position = 'fixed';
     document.body.style.overflow = 'hidden';
     popUpWindow.classList.remove('hide');
+    poupPage.style.display = ('block');
+    hamburgerButton.style.display = 'none';
+    headSection.style.display = 'none';
+    higherPage.style.display = 'none';
+    worksUp.style.display = 'none';
   });
 });
-// Close Popup
 const closePopup = document.querySelectorAll('#close-popup');
 closePopup.forEach((button) => {
   button.addEventListener('click', () => {
-    // popUpWindow.style.display = 'none';
     document.body.style.position = 'relative';
     document.body.style.overflow = 'scroll';
     popUpWindow.classList.add('hide');
     hamburgerButton.style.position = 'absolute';
     hamburgerButton.style.top = '0';
     hamburgerButton.style.margin = '45px 0 0 0';
+    poupPage.style.display = ('none');
+    hamburgerButton.style.display = 'block';
+    headSection.style.display = 'none';
+    higherPage.style.display = 'block';
+    worksUp.style.display = 'block';
   });
 });

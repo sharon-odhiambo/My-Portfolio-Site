@@ -907,14 +907,29 @@ input[type="email"] {
   display: none;
 }
 
+.popup-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.6);
+  backdrop-filter: blur(4px);
+}
+
 .mobile-popup {
   box-sizing: border-box;
   flex-direction: column;
   padding: 16px;
   gap: 12px;
-  width: 90%;
-  height: 90%;
-  top: 0;
+  width: 343px;
+  height: 713px;
+  top: 50px;
+  bottom: 50px;
+  left: 16px;
+  right: 16px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -951,9 +966,8 @@ input[type="email"] {
 
 .popup-image {
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-image: url("./images/SnapshootPortfolio.svg");
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -1205,6 +1219,34 @@ input[type="email"] {
     margin-bottom: 0;
   }
 
+  .languages li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    width: 66px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .languages-one li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    width: 66px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
   .skill-items ul li {
     width: 102px;
     height: 124px;
@@ -1338,13 +1380,18 @@ input[type="email"] {
 
   .mobile-popup {
     border: 1px solid #ebecf0;
-    height: 100%;
-    width: 1108px;
+    height: 900px;
+    max-width: 1108px;
+    width: 100%;
     border-radius: 16px;
     background: #fff;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    left: 142px;
+    right: 142px;
+    top: 77px;
+    bottom: 377px;
   }
-  
+
   .popup-content-desktop {
     display: flex;
     width: 778px;
@@ -1364,19 +1411,19 @@ input[type="email"] {
   .popup-content-mobile {
     display: none;
   }
-  
+
   .popup-head {
     display: flex;
     flex-direction: row;
     height: 40px;
-    width: 1108px;
+    width: 100%;
     left: 0;
     top: 0;
     border-radius: 0;
   }
 
   .popup-head h5 {
-    width: 1056px;
+    width: 1000px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1386,6 +1433,12 @@ input[type="email"] {
     order: 0;
     flex-grow: 0;
     margin-top: 0;
+  }
+
+  .popup-head img {
+    width: 18px;
+    height: 18px;
+    margin-top: 1.2rem;
   }
 
   .lower-sect {
@@ -1408,6 +1461,10 @@ input[type="email"] {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 20px;
+  }
+
+  .popup-links {
+    display: flex;
+    gap: 10px;
   }
 }
