@@ -477,6 +477,23 @@
   color: #6070ff;
 }
 
+.languages-one {
+  list-style: none;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 100%;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+}
+
 .languages li {
   display: flex;
   flex-direction: row;
@@ -886,19 +903,23 @@ input[type="email"] {
   flex-grow: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .mobile-popup {
   box-sizing: border-box;
   display: none;
   flex-direction: column;
   padding: 16px;
   gap: 12px;
-  width: 343px;
-  height: 733px;
-  left: calc(50% - 343px / 2);
-  top: 60px;
+  width: 100%;
+  height: 90%;
+  /* left: calc(50% - 343px / 2); */
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  z-index: 1;
 }
 
 .popup-head {
@@ -928,6 +949,12 @@ input[type="email"] {
   margin-top: 1.2rem;
 }
 
+.popup-image {
+  background-image: url("./images/SnapshootPortfolio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .popup-content-mobile {
   width: 311px;
   height: 220px;
@@ -940,6 +967,10 @@ input[type="email"] {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.popup-content-desktop {
+  display: none;
 }
 
 .popup-links {
@@ -1177,6 +1208,23 @@ input[type="email"] {
     height: 124px;
   }
 
+  .languages-one {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 100%;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6070ff;
+  }
+
   .languages-dropdown-bar {
     margin-bottom: 0;
     margin-top: 0;
@@ -1288,10 +1336,6 @@ input[type="email"] {
 
   .mobile-popup {
     display: none;
-  }
-
-  .desktop-popup {
-    display: flex;
     border: 1px solid #ebecf0;
     height: 1163px;
     width: 1156px;
@@ -1301,6 +1345,7 @@ input[type="email"] {
   }
   
   .popup-content-desktop {
+    display: flex;
     width: 778px;
     height: 382px;
     font-family: 'Poppins', sans-serif;
@@ -1315,7 +1360,11 @@ input[type="email"] {
     left: 24px;
   }
 
-  .popup-head1 {
+  .popup-content-mobile {
+    display: none;
+  }
+  
+  .popup-head {
     display: flex;
     flex-direction: row;
     height: 40px;
@@ -1325,7 +1374,7 @@ input[type="email"] {
     border-radius: 0;
   }
 
-  .popup-head1 h5 {
+  .popup-head h5 {
     width: 1056px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1338,17 +1387,22 @@ input[type="email"] {
     margin-top: 0;
   }
 
-  .popup-head1 img {
-    width: 18px;
-    height: 18px;
-    margin-top: 1.2rem;
-  }
-
   .lower-sect {
     display: flex;
     flex-direction: row;
   }
-  
+
+  .popup-image {
+    width: 100%;
+    height: 586px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    background-image: url("./images/popup-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .right-sect {
     display: flex;
     flex-direction: column;
