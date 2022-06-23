@@ -27,7 +27,7 @@ navOptions.forEach((navOption) => {
   });
 });
 // Works-Projects popup-window
-const workSection = [
+const projectSection = [
   {
     id: 1,
     title: 'Tonic',
@@ -35,7 +35,7 @@ const workSection = [
     featuredImage: './images/SnapshootPortfolio.svg',
     altmessage: 'Tonic-project',
     projects_overview: ['CANOPY', 'Full Stack Dev', '2022'],
-    technoligies: ['html', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     seeLive: 'https://sharon-odhiambo.github.io/',
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
@@ -46,7 +46,7 @@ const workSection = [
     featuredImage: './images/SnapshootPortfolio1.svg',
     altMessage: 'Multi-Post stories project',
     projectsOverview: ['CANOPY', 'Full Stack Dev', '2022'],
-    technoligies: ['html', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     seeLive: 'https://sharon-odhiambo.github.io/',
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
@@ -57,7 +57,7 @@ const workSection = [
     featuredImage: './images/SnapshootPortfolio2.svg',
     altMessage: 'Tonic-project',
     projectsOverview: ['CANOPY', 'Full Stack Dev', '2022'],
-    technoligies: ['html', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     seeLive: 'https://sharon-odhiambo.github.io/',
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
@@ -68,15 +68,74 @@ const workSection = [
     featuredImage: './images/SnapshootPortfolio3.svg',
     altMessage: 'Multi-Post stories-project',
     projectsOverview: ['CANOPY', 'Full Stack Dev', '2022'],
-    technoligies: ['html', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     seeLive: 'https://sharon-odhiambo.github.io/',
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
 ];
 // // Create Works Section
+function createWorks(projectSection) {
+  console.log('Sharon');
+  const workSection = document.querySelector('#works-sect');
+  for(i = 0; i < projectSection.length; i++) {
+    const doc = `
+    <div class="works-project">
+    <div class="works-top">
+    <div class="snapshoot-${projectSection[i].id}"></div>
+    </div>
+    <div class="project-info">
+    <h2>${projectSection[i].title}</h2>
+    <ul class="project-details">
+        <li>${projectSection[i].projectsOverview[0]}</li>
+        <li>${projectSection[i].projectsOverview[1]}</li>
+        <li>${projectSection[i].projectsOverview[2]}</li>
+    </ul>
+    <div>
+      <p>${projectSection[i].description}.</p>
+    </div>
+    <div>
+    <ul class="languages">
+      <li>${projectSection[i].technologies[0]}</li>
+      <li>${projectSection[i].technologies[1]}</li>
+      <li>${projectSection[i].technologies[2]}</li>
+    </ul>
+    </div>
+    <button type="button" class="button" id="btnSeeProject${projectSection[i].id}"><span>See Project ${projectSection[i].id}</span></button>
+  </div>
+  </div>`;
+  workSection.innerHTML += doc;
+  }
+}
+// const popupButton = document.getElementById('popup');
+document.addEventListener('DomContentLoaded', createWorks(projectSection));
+
+
+const popUpWindow = document.querySelector('.mobile-popup');
+function popUp(index) {
+  popUpWindow.classList.add('popUp');
+  document.querySelector('#popup-header').innerHTML = projects[index].id;
+  document.querySelector('#popup-header').innerHTML = projects[index].title;
+  document.querySelector('#popup-description').innerHTML = projects[index].description;
+  document.querySelector('#popup-image').src = `${projects[index].featuredImage}`;
+  document.querySelector('#popup-image-alt').innerHTML = projects[index].altMessage;
+  document.querySelector('#popup-overview').innerHTML = projects[index].projectsOverview;
+  document.querySelector('#popup-technologies').innerHTML = projects[index].technologies;
+  document.querySelector('#seeLivePopup').href = projects[index].seeLive;
+  document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
+}
+function popUpClose() {
+  popUpWindow.classList.remove('popUp');
+}
+const closePopUpWindow = document.querySelector('#closePopup');
+closePopUpWindow.addEventListener('click', popUpClose);
+const seeProject = document.querySelectorAll('.button');
+seeProject.forEach((element) => {
+  element.addEventListener('click', () => {
+    popUp(element.dataset.id);
+  });
+});
 // function createWorks(myArray) {
-//   console.log('Sharon');
-//   const workSection = document.querySelector('#works-sect');
+//   const projectSection = document.querySelector('#works-sect');
 //   for(i = 0; i < myArray.length; i++) {
 //     const doc = `
 //     <div class="works-project">
@@ -103,27 +162,13 @@ const workSection = [
 //     <button type="button" class="button"><span>See Project</span></button>
 //   </div>
 //   </div>`;
-//   workSection += doc;
+//   projectSection += doc;
 //   }
 // }
 // const popupButton = document.getElementById('popup');
-// popupButton.addEventListener('click', createWorks(worksection));
+// popupButton.addEventListener('click', createWorks(projectSection));
 
-const popUpWindow = document.querySelector('.mobile-popup');
-function popUp(index) {
-  popUpWindow.classList.add('popUp');
-  document.querySelector('#popup-header').innerHTML = projects[index].id;
-  document.querySelector('#popup-header').innerHTML = projects[index].title;
-  document.querySelector('#popup-description').innerHTML = projects[index].description;
-  document.querySelector('#popup-image').src = `${projects[index].featuredImage}`;
-  document.querySelector('#popup-image-alt').innerHTML = projects[index].altMessage;
-  document.querySelector('#popup-overview').innerHTML = projects[index].projectsOverview;
-  document.querySelector('#popup-technologies').innerHTML = projects[index].technologies;
-  document.querySelector('#seeLivePopup').href = projects[index].seeLive;
-  document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
-}
-
-// const popUpWindow = document.querySelector('.popup-window');
+// const popUpWindow = document.querySelector('.mobile-popup');
 // function popUp(index) {
 //   popUpWindow.classList.add('popUp');
 //   document.querySelector('#popup-header').innerHTML = projects[index].id;
@@ -136,14 +181,28 @@ function popUp(index) {
 //   document.querySelector('#seeLivePopup').href = projects[index].seeLive;
 //   document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
 // }
-// function popUpClose() {
-//   popUpWindow.classList.remove('popUp');
-// }
-// const closePopUpWindow = document.querySelector('#closePopup');
-// closePopUpWindow.addEventListener('click', popUpClose);
-// const seeProject = document.querySelectorAll('.button');
-// seeProject.forEach((element) => {
-//   element.addEventListener('click', () => {
-//     popUp(element.dataset.id);
-//   });
-// });
+
+// // const popUpWindow = document.querySelector('.popup-window');
+// // function popUp(index) {
+// //   popUpWindow.classList.add('popUp');
+// //   document.querySelector('#popup-header').innerHTML = projects[index].id;
+// //   document.querySelector('#popup-header').innerHTML = projects[index].title;
+// //   document.querySelector('#popup-description').innerHTML = projects[index].description;
+// //   document.querySelector('#popup-image').src = `${projects[index].featuredImage}`;
+// //   document.querySelector('#popup-image-alt').innerHTML = projects[index].altMessage;
+// //   document.querySelector('#popup-overview').innerHTML = projects[index].projectsOverview;
+// //   document.querySelector('#popup-technologies').innerHTML = projects[index].technologies;
+// //   document.querySelector('#seeLivePopup').href = projects[index].seeLive;
+// //   document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
+// // }
+// // function popUpClose() {
+// //   popUpWindow.classList.remove('popUp');
+// // }
+// // const closePopUpWindow = document.querySelector('#closePopup');
+// // closePopUpWindow.addEventListener('click', popUpClose);
+// // const seeProject = document.querySelectorAll('.button');
+// // seeProject.forEach((element) => {
+// //   element.addEventListener('click', () => {
+// //     popUp(element.dataset.id);
+// //   });
+// // });

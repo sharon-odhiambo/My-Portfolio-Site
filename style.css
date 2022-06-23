@@ -332,7 +332,7 @@
   flex-grow: 0;
 }
 
-.snapshoot-one {
+.snapshoot-1 {
   height: 220px;
   width: 100%;
   left: 16px;
@@ -343,7 +343,7 @@
   background-position: center;
 }
 
-.snapshoot-two {
+.snapshoot-2 {
   height: 220px;
   width: 100%;
   left: 16px;
@@ -354,7 +354,7 @@
   background-position: center;
 }
 
-.snapshoot-three {
+.snapshoot-3 {
   height: 220px;
   width: 100%;
   left: 16px;
@@ -365,7 +365,7 @@
   background-position: center;
 }
 
-.snapshoot-four {
+.snapshoot-4 {
   height: 220px;
   width: 100%;
   left: 16px;
