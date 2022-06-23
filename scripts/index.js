@@ -73,59 +73,55 @@ const workSection = [
     seeSource: 'https://github.com/sharon-odhiambo/My-Portfolio-Site',
   },
 ];
+// // Create Works Section
+// function createWorks(myArray) {
+//   console.log('Sharon');
+//   const workSection = document.querySelector('#works-sect');
+//   for(i = 0; i < myArray.length; i++) {
+//     const doc = `
+//     <div class="works-project">
+//     <div class="works-top">
+//     <div class="snapshoot-one"></div>
+//     </div>
+//     <div class="project-info">
+//     <h2>Tonic</h2>
+//     <ul class="project-details">
+//         <li>Canopy</li>
+//         <li>BackEnd Dev</li>
+//         <li>2015</li>
+//     </ul>
+//     <div>
+//       <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+//     </div>
+//     <div>
+//     <ul class="languages">
+//       <li>html</li>
+//       <li>css</li>
+//       <li>javascript</li>
+//     </ul>
+//     </div>
+//     <button type="button" class="button"><span>See Project</span></button>
+//   </div>
+//   </div>`;
+//   workSection += doc;
+//   }
+// }
+// const popupButton = document.getElementById('popup');
+// popupButton.addEventListener('click', createWorks(worksection));
 
-// Grab the parent container from the html body
-const projectContainer = document.querySelector('.popUp');
-for (let card = 0; card < workSection.length; card += 1) {
-  const projectCard = document.createElement('div');
-  const projectInfo = document.createElement('div');
-  const heading = document.createElement('h2');
-  //const skills = document.createElement('ul');
-
-  // // project overview
-  // const [canopy, fullStack, date] = workSection[card].projectsOverview;
-  // let overView;
-  // for (let list = 0; list < 3; list += 1) {
-  //   overView = document.createElement('li');
-  //   if (list === 0) {
-  //     overView.textContent = canopy;
-  //   } else if (list === 1) {
-  //     overView.textContent = fullStack;
-  //   } else if (list === 2) {
-  //     overView.textContent = date;
-  //   }
-  // }
-
-  //skills.appendChild(overView);
-  //skills.className = 'project-details';
-  projectInfo.append(heading, skills);
-  projectInfo.className = 'project-info';
-  if (card === 1 || card === 3) {
-    heading.textContent = workSection[1].title;
-    projectCard.classList = 'works-project-one';
-  } else {
-    heading.textContent = workSection[0].title;
-    projectCard.classList = 'works-project';
-  }
-  const worksTop = document.createElement('div');
-  worksTop.className = 'works-top';
-  const snapShot = document.createElement('div');
-  if (card === 0) {
-    snapShot.className = 'snapshoot-one';
-  } else if (card === 1) {
-    snapShot.className = 'snapshoot-two';
-  } else if (card === 2) {
-    snapShot.className = 'snapshoot-three';
-  } else if (card === 3) {
-    snapShot.className = 'snapshoot-four';
-  }
-
-  worksTop.appendChild(snapShot);
-  projectCard.append(worksTop, projectInfo);
-  projectContainer.appendChild(projectCard);
+const popUpWindow = document.querySelector('.mobile-popup');
+function popUp(index) {
+  popUpWindow.classList.add('popUp');
+  document.querySelector('#popup-header').innerHTML = projects[index].id;
+  document.querySelector('#popup-header').innerHTML = projects[index].title;
+  document.querySelector('#popup-description').innerHTML = projects[index].description;
+  document.querySelector('#popup-image').src = `${projects[index].featuredImage}`;
+  document.querySelector('#popup-image-alt').innerHTML = projects[index].altMessage;
+  document.querySelector('#popup-overview').innerHTML = projects[index].projectsOverview;
+  document.querySelector('#popup-technologies').innerHTML = projects[index].technologies;
+  document.querySelector('#seeLivePopup').href = projects[index].seeLive;
+  document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
 }
-
-
 
 // const popUpWindow = document.querySelector('.popup-window');
 // function popUp(index) {
