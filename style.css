@@ -77,6 +77,7 @@
   display: none;
   margin-top: 2.5rem;
   margin-left: 20.25rem;
+  cursor: pointer;
 }
 
 .mobile-nav-menu {
@@ -922,12 +923,12 @@ input[type="email"] {
 .mobile-popup {
   box-sizing: border-box;
   flex-direction: column;
-  padding: 16px;
+  padding: 10px 16px;
   gap: 12px;
   width: 343px;
   height: 713px;
-  top: 50px;
-  bottom: 50px;
+  top: 20px;
+  bottom: 20px;
   left: 16px;
   right: 16px;
   background: #fff;
@@ -935,6 +936,10 @@ input[type="email"] {
   border-radius: 16px;
   z-index: 1;
   position: relative;
+}
+
+.close-popup {
+  cursor: pointer;
 }
 
 .popup-head {
@@ -996,6 +1001,7 @@ input[type="email"] {
 }
 
 .popup-live {
+  text-decoration: none;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
