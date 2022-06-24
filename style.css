@@ -1017,6 +1017,12 @@ input[type="email"] {
   background-color: #fff;
 }
 
+.error-message {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 768px) {
   .headline {
     display: flex;

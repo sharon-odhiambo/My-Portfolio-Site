@@ -28,6 +28,12 @@ navOptions.forEach((navOption) => {
   });
 });
 // Create Form Validation
+const button = document.getElementById('form');
+const email = document.getElementById('mail');
+const error = document.getElementById('error-message');
+button.addEventListener('submit', (event) => {
+  const Email = email.value;
+  const newString = (str) => /^[a-z0-9@.]+$/.test(str) && !/[A-Z]/.test(str);
 // Works-Porjects popup-window
 const worksection = [
   {
