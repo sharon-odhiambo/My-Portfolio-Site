@@ -34,7 +34,17 @@ const error = document.getElementById('error-message');
 button.addEventListener('submit', (event) => {
   const Email = email.value;
   const newString = (str) => /^[a-z0-9@.]+$/.test(str) && !/[A-Z]/.test(str);
-// Works-Porjects popup-window
+  if (!newString(Email)) {
+    error.innerHTML = 'Sorry! Please use all lowercase.';
+    error.style.color = 'red';
+    event.preventDefault();
+    setTimeout(() => {
+      error.textContent = "Let's go again";
+    }, 5000);
+  }
+});
+
+// Works-Projects popup-window
 const worksection = [
   {
     id: 1,
