@@ -3,6 +3,7 @@ const navButton = document.querySelector('.mobile-nav-menu');
 const exitButton = document.querySelector('.exit-btn');
 const navOptions = document.querySelectorAll('.mobile-nav-link');
 const headSection = document.querySelector('.overlay');
+
 // Open Menu Bar
 hamburgerButton.addEventListener('click', () => {
   navButton.style.display = ('block');
@@ -10,6 +11,7 @@ hamburgerButton.addEventListener('click', () => {
   headSection.style.display = ('block');
   hamburgerButton.style.display = ('none');
 });
+
 // Close Menu Bar
 exitButton.addEventListener('click', () => {
   navButton.style.display = ('none');
@@ -17,6 +19,7 @@ exitButton.addEventListener('click', () => {
   headSection.style.display = ('none');
   hamburgerButton.style.display = ('block');
 });
+
 // Close Menu Bar Using navOptions
 navOptions.forEach((navOption) => {
   navOption.addEventListener('click', () => {
@@ -26,6 +29,7 @@ navOptions.forEach((navOption) => {
     hamburgerButton.style.display = ('block');
   });
 });
+
 // Create Form Validation
 const button = document.getElementById('form');
 const email = document.getElementById('mail');
@@ -38,7 +42,7 @@ button.addEventListener('submit', (event) => {
     error.style.color = 'red';
     event.preventDefault();
     setTimeout(() => {
-      error.textContent = "Let's try again";
+      error.textContent = "Let's go again";
     }, 5000);
   }
 });
