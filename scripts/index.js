@@ -37,5 +37,8 @@ button.addEventListener('submit', (event) => {
     error.innerHTML = 'Sorry! Please use all lowercase.';
     error.style.color = 'red';
     event.preventDefault();
+    setTimeout(() => {
+      error.textContent = "Let's try again";
+    }, 5000);
   }
 });
