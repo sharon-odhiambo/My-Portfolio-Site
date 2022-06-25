@@ -159,3 +159,36 @@ closePopup.forEach((button) => {
     worksUp.style.display = 'block';
   });
 });
+// Local Storage Configuration
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('mail');
+const userInput = document.getElementById('msg');
+const inputs = document.querySelectorAll('.storage');
+
+// Setup Local storage key/value
+const userData = { user_name: '', user_email: '', user_input: '' };
+// Check and pre-fill user's details //
+function checkLocalStorage() {
+  if (localStorage.getItem('userLoggedInfo')) {
+    const userInfo = JSON.parse(localStorage.getItem('userLoggedInfo'));
+    userName.value = userInfo.user_name;
+    userEmail.value = userInfo.user_email;
+    userInput.innerText = userInfo.user_input;
+  }
+}
+checkLocalStorage();
+
+// Update or Setc(new users) user's details //
+function getUserInfo() {
+  userData.user_name = userName.value;
+  userData.user_email = userEmail.value;
+  userData.user_input = userInput.value;
+  localStorage.setItem('userLoggedInfo', JSON.stringify(userData));
+}
+
+// Iterate through each input element with an event listening smurf //
+inputs.forEach((input) => {
+  input.addEventListener('input', () => {
+      getUserInfo();
+  });
+});
