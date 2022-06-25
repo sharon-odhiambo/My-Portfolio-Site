@@ -1,16 +1,16 @@
 
 
 # Portfolio-Site
--This is my first portfolio site using Microverse templates
+-This is my first portfolio at Microverse as a beginner software developer. The portfolio is a skeleton of both my mobile and desktop portfolio using Figma templates to feature my logo, list of portfolio, social media contacts and a way to contact me from the website. 
 
 ## Built With
 
 - Major languages 
-  Javascript
+  HTML | CSS | Javascript
 - Frameworks
-  CSS
+  None
 - Technologies used
-  Nodejs, CSS, HTML, Javascript
+  Nodejs, jQuery
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ HTML, CSS
 To get a local copy for practice or as a template, follow these simple steps.
 
 Access the live source on - https://github.com/sharon-odhiambo/My-Portfolio-Site
-Copy the https or SSH address on the code
+Copy the **https** or **SSH** address on the code
 Clone the repository using your editor.
 
 ### Live Demo
