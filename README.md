@@ -26,20 +26,26 @@ $ cd My-Portfolio-Site
 ### Prerequisites
 HTML, CSS
 
+### Getting Started
+To get a local copy for practice or as a template, follow these simple steps.
+
+Access the live source on - https://github.com/sharon-odhiambo/My-Portfolio-Site
+Copy the https or SSH address on the code
+Clone the repository using your editor.
+
 ### Live Demo
 
 Live Version - https://sharon-odhiambo.github.io/
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Sharon Odhiambo**
 
-- GitHub: [@githubhandle](https://github.com/sharon-odhiambo)
-- Twitter: [@twitterhandle](https://twitter.com/SharonVictor16)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sharon-odhiambo-4333a0163/)
+- GitHub: [@sharon-odhiambo](https://github.com/sharon-odhiambo)
+- Twitter: [@SharonVictor16](https://twitter.com/SharonVictor16)
+- LinkedIn: [Sharon Odhiambo](https://www.linkedin.com/in/sharon-odhiambo-4333a0163/)
 
 ## 🤝 Contributing
-@https://github.com/Hirwacardinalloic
 
 Contributions, issues, and feature requests are welcome!
 
@@ -52,8 +58,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Big thanks to the microverse community with a special mention of my coding partners, morning session teams, standup teams and reviewers.
+- My family's support and assistance whenever was needed.
 
 ## 📝 License
 
