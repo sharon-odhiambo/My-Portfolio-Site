@@ -12,16 +12,7 @@
 - Technologies used
   Nodejs, jQuery
   
-## Getting Started
-To get a local copy up and running follow these simple example steps.
-
-### Clone this repository
-$ git@github.com:sharon-odhiambo/My-Portfolio-Site.git
-$ cd My-Portfolio-Site
-
-### Open index.html with your browser
-
-### Prerequisites
+ ### Prerequisites
 HTML, CSS
 
 ### Getting Started
@@ -29,7 +20,12 @@ To get a local copy for practice or as a template, follow these simple steps.
 
 Access the live source on - https://github.com/sharon-odhiambo/My-Portfolio-Site
 Copy the **https** or **SSH** address on the code
-Clone the repository using your editor.
+Clone the repository using your editor    **or**
+
+### Clone this repository
+$ git@github.com:sharon-odhiambo/My-Portfolio-Site.git
+$ cd My-Portfolio-Site
+
 
 ### Live Demo
 
