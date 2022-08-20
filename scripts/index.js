@@ -189,6 +189,6 @@ function getUserInfo() {
 // Iterate through each input element with an event listening smurf //
 inputs.forEach((input) => {
   input.addEventListener('input', () => {
-      getUserInfo();
+    getUserInfo();
   });
 });
