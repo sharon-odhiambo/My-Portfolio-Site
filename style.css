@@ -110,6 +110,10 @@
   margin-top: 60px;
 }
 
+.button-resume a {
+  text-decoration: none;
+}
+
 .mobile-nav-link a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -631,10 +635,6 @@
   flex: none;
   order: 3;
   flex-grow: 0;
-}
-
-.button-resume a {
-  text-decoration: none;
 }
 
 .button-resume span {
