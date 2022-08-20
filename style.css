@@ -633,6 +633,10 @@
   flex-grow: 0;
 }
 
+.button-resume a {
+  text-decoration: none;
+}
+
 .button-resume span {
   transition: 0.5s;
   width: 148px;
